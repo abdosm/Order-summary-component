@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container {
+  max-width: 500px;
+  background-color: white;
+  border-radius: 1rem;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
+.hero-svg img {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.container .text {
+  padding: 30px 80px;
+  text-align: center;
+}
+.container .text h2 {
+  padding-bottom: 20px;
+}
+.container .text p {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  line-height: 1.7;
+}
+.container .box {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 1rem;
+  margin: 0 3rem 1rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.container .box .music-plan {
+  display: flex;
+  flex-basis: 80%;
+}
+.container .box .price {
+  padding-left: 1rem;
+  line-height: 1.7;
+}
+.container .box h4 {
+  font-weight: 900;
+}
+.container .box p {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+.container .box a {
+  color: blue;
+  font-weight: bold;
+}
+.container .box a:hover {
+  opacity: 70%;
+  text-decoration: none;
+  cursor: pointer;
+}
+.container .label {
+  text-align: center;
+  margin: 2rem 3rem 1rem;
+}
+.container .label .proceed {
+  background-color: blue;
+  padding: 0.8rem;
+  border-radius: 1rem;
+}
+.container .label .proceed:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+.container .label .proceed a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.container .label .cancel  {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.container .label .cancel a {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);;
+  font-weight: bold;
+}
+.container .label .cancel a:hover {
+  color: black;
+}
